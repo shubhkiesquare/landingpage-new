@@ -144,7 +144,7 @@ header nav a {
     width: 100%;
     left: 50%;}
 .carousel-img {
-    transform: rotateX(30deg) rotateY(0deg) rotateZ(-20deg) !important;
+    transform: rotateX(15deg) rotateY(0deg) rotateZ(-20deg) !important;
     transform-style: preserve-3d;
     animation: zoomAnimate 0.7s ease-in-out forwards;
 }
@@ -184,6 +184,7 @@ header nav a {
     width: 400px;
     position: absolute;
     top: 50%;
+    left: -40px;
     transform: translateY(-50%);
     transition: opacity 0.5s;
 }
@@ -197,11 +198,15 @@ header nav a {
 .carousel .list .item .introduce .topic {
     font-size: 4em;
     font-weight: 500;
+    text-align: center;
+    line-height: 1.35;
 }
 
 .carousel .list .item .introduce .des {
     font-size: small;
     color: #5559;
+    text-align: center;
+    line-height: 1.35;
 }
 
 .carousel .list .item .introduce .seeMore {
@@ -282,8 +287,9 @@ header nav a {
     animation-delay: 1.4s;
 }
 
-.carousel .list .item:nth-child(2) .introduce .seeMore {
-    animation-delay: 1.6s;
+.carousel .list .item:nth-child(2) .introduce .seeMore,
+.carousel .list .item:nth-child(2) .introduce .seeMoreBtn {
+    animation-delay: 1.9s;
 }
 
 /* next click */
@@ -605,7 +611,7 @@ header nav a {
     display: block;
     position: absolute;
     top: -40px;
-    left: -20px;
+    left: 0px;
 }
 
 .dotted-circle {
@@ -754,6 +760,9 @@ header nav a {
     background-color: transparent;
     margin-top: 24px;
     margin-left: 40px;
+    position: relative;
+    display: block;
+    
 }
 
 .seeMoreBtn a {
@@ -783,6 +792,7 @@ header nav a {
     border-radius: 100px;
     transition: all 0.2s;
     position: absolute;
+    left: 18%;
 }
 
 .btn:hover {
@@ -1070,7 +1080,8 @@ header nav a {
 }
 
 .brushline3,
-.brushline4 {
+.brushline4,
+.multi-brushline3 {
     position: relative;
     white-space: nowrap;
 }
@@ -1087,6 +1098,38 @@ header nav a {
     top: -40px;
     left: -9px;
     z-index: -1;
+}
+.brushline3.multi-brushline3::before {
+    content: "";
+    width: 210px;
+    height: 125px;
+    position: absolute;
+    top: 0px;
+    left: 21px;
+}
+.brushline3.confi-brushline3::before {
+    content: "";
+    width: 220px;
+    height: 105px;
+    position: absolute;
+    top: -10px;
+    left: -9px;
+}
+.brushline3.camp-brushline3::before {
+    content: "";
+    width: 300px;
+    height: 175px;
+    position: absolute;
+    top: -20px;
+    left: 31px;
+}
+.brushline3.simu-brushline3::before {
+    content: "";
+    width: 180px;
+    height: 105px;
+    position: absolute;
+    top: -20px;
+    left: 1px;
 }
 .brushline4::before {
     content: "";
@@ -1529,6 +1572,22 @@ blockquote {
     background-repeat: no-repeat;
     background-size: contain;
 }
+.sim-position {
+    display: block;
+    margin: 4rem 0;
+}
+.sim-position::before {
+    content: "";
+    width: 150px;
+    height: 120px;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    background-image: url("../images/fireworks_01.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .main-fireworks {
     position: relative;
 }
@@ -1539,6 +1598,21 @@ blockquote {
     position: absolute;
     top: -70px;
     right: -70px;
+    background-image: url("../images/three-lines.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(120deg);
+}
+.sim-fireworks {
+    position: relative;
+}
+.sim-fireworks::after {
+    content: "";
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: -60px;
     background-image: url("../images/three-lines.png");
     background-repeat: no-repeat;
     background-size: contain;
