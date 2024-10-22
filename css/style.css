@@ -1642,7 +1642,7 @@ blockquote {
 }
 
 .image-container.sov-img-container {
-    height: 53vh;
+    height: 40vh;
 }
 .image-container.sim-img-container {
     height: 40vh;
@@ -1823,7 +1823,7 @@ h2.spends-heading {font-size: 6.5rem !important; display: flex; justify-content:
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    width: 80%;
+    width: 70%;
     margin: 1.5rem;
 }
 .meta-text {
