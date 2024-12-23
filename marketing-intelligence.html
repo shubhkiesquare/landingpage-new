@@ -1,246 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-    />
-    <title>KiE Square Analytics</title>
-    <link rel="icon" type="image/ico" href="./images/kiesquare-favicon.ico" />
-    <link rel="icon" type="image/png" href="./images/kiesquare-fav-icon.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="./images/kiesquare-favicon-16x16.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="./images/kiesquare-favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="./images/kiesquare-fav-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="./images/kiesquare-fav-512x512.png"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-      rel="stylesheet"
-    />
-    <link href="./css/style.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <div class="container-fluid g-0">
-      <header>
-        <div class="logo">
-          <a href="./index.html">
-            <img
-              src="./images/kiesquare-logo-transparent.png"
-              alt="KiE Square"
-              class="logo-img"
-            />
-          </a>
-        </div>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <title>KiE Square Analytics</title>
+  <link rel="icon" type="image/ico" href="./images/kiesquare-favicon.ico" />
+  <link rel="icon" type="image/png" href="./images/kiesquare-fav-icon.png" />
+  <link rel="icon" type="image/png" href="./images/kiesquare-favicon-16x16.png" />
+  <link rel="icon" type="image/png" href="./images/kiesquare-favicon-32x32.png" />
+  <link rel="icon" type="image/png" href="./images/kiesquare-fav-192x192.png" />
+  <link rel="icon" type="image/png" href="./images/kiesquare-fav-512x512.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="./css/style.css" rel="stylesheet" />
 
-      <section class="intro">
-        <div class="product-detail" data-aos="fade-up">
-          <div class="row justify-content-center">
-            <div class="col-10 text-center">
-              <div class="title">Market Intelligence</div>
-              <div class="my-5">
-                <h1 class="heading-1">
-                  In the race for digital dominance, standing still is not an
-                  option. <span class="brushline2">Elevate</span> your brand
-                  with our Tools and pave the way for lasting
-                  <span class="brushline3">success.</span>
-                </h1>
-              </div>
-            </div>
+
+</head>
+
+<body>
+  <div class="container-fluid g-0">
+    <header>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./images/kiesquare-logo-transparent.png" alt="KiE Square" class="logo-img" />
+        </a>
+      </div>
+      <div class="contact">
+        <button class="btn btn-outline-primary contactSales"><img src="./images/contact-sales.png" class="sales-icon"
+            alt="Contact Sales" />Contact Sales</button>
+        <form action="" class="contact-sales-form showForm row g-3 formContact" id="emailFormMeta">
+          <div class="col-md-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName">
           </div>
-        </div>
-      </section>
-      <section class="section" data-bg="#fafafa" data-aos="fade-up">
+          <div class="col-md-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName">
+          </div>
+          <div class="col-md-12 mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-control" required>
+          </div>
+          <div class="col-md-12 mb-3">
+            <label for="requestType" class="form-label">Request Type</label>
+            <select id="requestType" class="form-select">
+              <option selected>Select</option>
+              <option>Request for Demo</option>
+              <option>Buying Options</option>
+              <option>Enquire about tool</option>
+            </select>
+          </div>
+          <div class="col-md-12 mb-3">
+            <label for="comments" class="form-label">Comments</label>
+            <textarea cols="6" rows="5" id="comments" class="form-control"></textarea>
+          </div>
+          <button class="btn btn-primary send" type="submit">Send</button>
+        </form>
+      </div>
+    </header>
+
+    <section class="intro">
+      <div class="product-detail" data-aos="fade-up">
         <div class="row justify-content-center">
-          <div class="col-sm-12 col-md-6 mt-5 position-relative">
-            <div class="position-sticky content-left">
-              <h2 class="text-center">The Market Scenario</h2>
-              <p>
-                In today's competitive e-commerce landscape, platforms like
-                Amazon, Flipkart, Nykaa, and Blinkit dominate, offering
-                unparalleled reach for brands. However, with thousands of SKUs,
-                promotional campaigns, and ever-evolving algorithms, staying
-                ahead is more challenging than ever. Brands must now not only
-                monitor their performance but also deeply understand market
-                trends, competitors' tactics, and customer behavior to thrive.
-              </p>
-              <p>
-                Here's where Meta steps in—a cutting-edge e-commerce analytics
-                tool designed to help brands navigate this complex environment
-                effortlessly. With Meta, brands can not only track but also
-                investigate shifts in the market, enabling them to make
-                data-driven decisions that put them ahead of the competition.
-              </p>
-              <div class="swiper metaSwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./images/meta-image-1.png" alt="" class="slider-img" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/meta-image-2.png" alt="" class="slider-img" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/meta-image-3.png" alt="" class="slider-img" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/meta-image-4.png" alt="" class="slider-img" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/meta-image-5.png" alt="" class="slider-img" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/meta-image-6.png" alt="" class="slider-img" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/meta-image-7.png" alt="" class="slider-img" />
-                  </div>
-                  
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-4 mt-5">
-            <div class="content-right">
-                <h3 class="text-center">
-                  Here's how Meta is reshaping the e-commerce landscape:
-                </h3>
-                <div class="feature-items">
-                  <span class="item-heading"
-                    >Cross-Platform Intelligence (CPI):</span
-                  >
-                  <ul>
-                    <li>
-                      Unified dashboard aggregating data across multiple platforms
-                      Amazon, Flipkart, Nykaa...
-                    </li>
-                    <li>Holistic view of performance and share-of-voice (SOV)</li>
-                    <li>
-                      Simplifies comparison and data-driven insights for better
-                      decisions
-                    </li>
-                  </ul>
-                </div>
-                <div class="feature-items">
-                    <span class="item-heading"
-                    >Category Command (CC):</span
-                  >
-                  <ul>
-                    <li>
-                        Delivers deep insights into specific categories
-
-                    </li>
-                    <li>Tracks category performance and highlights trends</li>
-                    
-                </div>
-                <div class="feature-items">
-                    <span class="item-heading"
-                    >Product Performance Precision (P3):</span
-                  >
-                  <ul>
-                    <li>
-                        Provides granular product performance insights
-                    </li>
-                    <li>Alerts on underperforming products and popular items</li>
-                    <li>
-                        Optimizes product listings for better visibility and customer engagement
-                    </li>
-                </div>
-                <div class="feature-items">
-                    <span class="item-heading"
-                    >Competitive Radar (CR):</span
-                  >
-                  <ul>
-                    <li>
-                        Complete view of competitor activity across platforms
-                    </li>
-                    <li>Compares performance against competitors in real-time
-                    </li>
-                    <li>
-                        Adapts strategies to outmaneuver competition
-                    </li>
-                </div>
-                <div class="feature-items">
-                    <span class="item-heading"
-                    >SOV Boost (SB):
-                    </span
-                  >
-                  <ul>
-                    <li>
-                        Tracks both organic and sponsored SOV
-                    </li>
-                    <li>Maximizes visibility and ROI of campaigns</li>
-                   
-                </div>
-                <div class="feature-items">
-                    <span class="item-heading"
-                    >Dynamic Trend Analytics (DTA):</span
-                  >
-                  <ul>
-                    <li>
-                        Uses machine learning to investigate trends and behaviors
-                    </li>
-                    <li>Highlight features responsible for product recent trends
-                    </li>
-                    
-                </div>
-                <div class="feature-items">
-                    <span class="item-heading"
-                    >Unified Brand Presence (UBP):
-                    </span
-                  >
-                  <ul>
-                    <li>
-                        Consolidates total online presence into a single dashboard
-
-                    </li>
-                    <li>Identifies gaps in brand consistency across platforms
-                    </li>
-                    
-                </div>
+          <div class="col-10 text-center">
+            <div class="title">Market Intelligence</div>
+            <div class="my-5">
+              <h1 class="heading-1">
+                In the race for digital dominance, standing still is not an
+                option. <span class="brushline2">Elevate</span> your brand
+                with our Tools and pave the way for lasting
+                <span class="brushline3">success.</span>
+              </h1>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <div class="row mb-5 justify-content-center">
+      <div class="col-sm-12 col-md-10">
+        <div class="video-player">
+          <video autoplay muted controls width="100%" height="auto">
+            <source type="video/mp4" src="./video/meta360.mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <section class="section" data-bg="#fafafa" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-6 mt-5 position-relative">
+          <div class="position-sticky content-left">
+            <h2 class="text-center">The Market Scenario</h2>
+            <p>
+              In today's competitive e-commerce landscape, platforms like
+              Amazon, Flipkart, Nykaa, and Blinkit dominate, offering
+              unparalleled reach for brands. However, with thousands of SKUs,
+              promotional campaigns, and ever-evolving algorithms, staying
+              ahead is more challenging than ever. Brands must now not only
+              monitor their performance but also deeply understand market
+              trends, competitors' tactics, and customer behavior to thrive.
+            </p>
+            <p>
+              Here's where Meta steps in—a cutting-edge e-commerce analytics
+              tool designed to help brands navigate this complex environment
+              effortlessly. With Meta, brands can not only track but also
+              investigate shifts in the market, enabling them to make
+              data-driven decisions that put them ahead of the competition.
+            </p>
+            <div class="swiper metaSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/meta-image-1.png" alt="" class="slider-img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/meta-image-2.png" alt="" class="slider-img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/meta-image-3.png" alt="" class="slider-img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/meta-image-4.png" alt="" class="slider-img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/meta-image-5.png" alt="" class="slider-img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/meta-image-6.png" alt="" class="slider-img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/meta-image-7.png" alt="" class="slider-img" />
+                </div>
 
-      <!-- <div class="started-btn d-flex">
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-5">
+          <div class="content-right">
+            <h3 class="text-center">
+              Here's how Meta is reshaping the e-commerce landscape:
+            </h3>
+            <div class="feature-items">
+              <span class="item-heading">Cross-Platform Intelligence (CPI):</span>
+              <ul>
+                <li>
+                  Unified dashboard aggregating data across multiple platforms
+                  Amazon, Flipkart, Nykaa...
+                </li>
+                <li>Holistic view of performance and share-of-voice (SOV)</li>
+                <li>
+                  Simplifies comparison and data-driven insights for better
+                  decisions
+                </li>
+              </ul>
+            </div>
+            <div class="feature-items">
+              <span class="item-heading">Category Command (CC):</span>
+              <ul>
+                <li>
+                  Delivers deep insights into specific categories
+
+                </li>
+                <li>Tracks category performance and highlights trends</li>
+
+            </div>
+            <div class="feature-items">
+              <span class="item-heading">Product Performance Precision (P3):</span>
+              <ul>
+                <li>
+                  Provides granular product performance insights
+                </li>
+                <li>Alerts on underperforming products and popular items</li>
+                <li>
+                  Optimizes product listings for better visibility and customer engagement
+                </li>
+            </div>
+            <div class="feature-items">
+              <span class="item-heading">Competitive Radar (CR):</span>
+              <ul>
+                <li>
+                  Complete view of competitor activity across platforms
+                </li>
+                <li>Compares performance against competitors in real-time
+                </li>
+                <li>
+                  Adapts strategies to outmaneuver competition
+                </li>
+            </div>
+            <div class="feature-items">
+              <span class="item-heading">SOV Boost (SB):
+              </span>
+              <ul>
+                <li>
+                  Tracks both organic and sponsored SOV
+                </li>
+                <li>Maximizes visibility and ROI of campaigns</li>
+
+            </div>
+            <div class="feature-items">
+              <span class="item-heading">Dynamic Trend Analytics (DTA):</span>
+              <ul>
+                <li>
+                  Uses machine learning to investigate trends and behaviors
+                </li>
+                <li>Highlight features responsible for product recent trends
+                </li>
+
+            </div>
+            <div class="feature-items">
+              <span class="item-heading">Unified Brand Presence (UBP):
+              </span>
+              <ul>
+                <li>
+                  Consolidates total online presence into a single dashboard
+
+                </li>
+                <li>Identifies gaps in brand consistency across platforms
+                </li>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="started-btn d-flex">
         <button class="get-started-btn my-5">
           <a href="https://app.powerbi.com/groups/a2a28cf4-a7f5-4830-8fa4-370e8f09dae7/reports/b4c4bb49-e88f-4dfa-bf39-e6780f8458a8/ReportSectiond149c1c5e8b1c7ae6ef6?experience=power-bi"> Get Started </a>
         </button>
       </div> -->
 
-       
 
-       
 
-      <!-- <div class="row justify-content-center">
+
+
+    <!-- <div class="row justify-content-center">
         <div class="col-sm-12 col-md-3">
           <h2 class="my-5">
             <span class="brushline">Key Features</span>
@@ -361,95 +359,224 @@
           </div>
         </div>
       </div> -->
-       
-      <div class="row justify-content-center">
-        <div class="col-md-8 mt-5 pt-5">
-          <h2>
-            Why Choose <span class="text-color">Meta?</span>
-             
-          </h2>
-        </div>
-      </div>
-      <div
-        class="row justify-content-center align-items-center my-5 pb-5"
-        data-aos="zoom-in"
-      >
-        <div class="col-5">
-          <div class="dq-highlight">
-            <img
-              src="./images/why-choose.png"
-              alt="Why Choose us"
-              class="banner-img"
-            />
-          </div>
-        </div>
-        <div class="col-5">
-          <span class="choose-text">
-            Meta goes beyond simple analytics. It's a comprehensive e-commerce intelligence tool that not only tracks performance but investigates market trends, giving you a competitive edge. With Meta, you can turn data into action, ensuring that your brand is always one step ahead in the fast-paced world of e-commerce. Stay informed, stay competitive, and stay on top with Meta.
-          </span>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-sm-12 col-md-8">
-         
-          <div class="started-btn d-flex">
-            <button class="get-started-btn my-5">
-              <a href="https://app.powerbi.com/groups/a2a28cf4-a7f5-4830-8fa4-370e8f09dae7/reports/b4c4bb49-e88f-4dfa-bf39-e6780f8458a8/ReportSectiond149c1c5e8b1c7ae6ef6?experience=power-bi">
-                Get Started
-              </a>
-            </button>
-          </div>
-        </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8 mt-5 pt-5">
+        <h2>
+          Why Choose <span class="text-color">Meta?</span>
+
+        </h2>
       </div>
     </div>
+    <div class="row justify-content-center align-items-center my-5 pb-5" data-aos="zoom-in">
+      <div class="col-5">
+        <div class="dq-highlight">
+          <img src="./images/why-choose.png" alt="Why Choose us" class="banner-img" />
+        </div>
+      </div>
+      <div class="col-5">
+        <span class="choose-text">
+          Meta goes beyond simple analytics. It's a comprehensive e-commerce intelligence tool that not only tracks
+          performance but investigates market trends, giving you a competitive edge. With Meta, you can turn data into
+          action, ensuring that your brand is always one step ahead in the fast-paced world of e-commerce. Stay
+          informed, stay competitive, and stay on top with Meta.
+        </span>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-6">
+        <form id="emailDemoMeta">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" id="scheduleEmail" placeholder="Enter your email"
+              aria-label="Enter your email" aria-describedby="sendEmailButton">
+            <button class="btn btn-primary" type="submit" id="sendEmailButton">Schedule for
+              Demo</button>
+          </div>
+        </form>
+      </div>
+      <!-- <div class="col-4 align-self-start">
+        <button class="get-started-btn">
+          <a href="./pricing.html" target="_blank">
+            Buy The Meta 360 Now
+          </a>
+        </button>
+      </div> -->
+    </div>
+    <!-- <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-8">
 
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      var swiper = new Swiper(".metaSwiper", {
-        autoplay: {
-          delay: 3700,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        },
-        effect: "creative",
-        creativeEffect: {
-          prev: {
-            shadow: true,
-            translate: ["-120%", 0, -500],
-          },
-          next: {
-            shadow: true,
-            translate: ["120%", 0, -500],
-          },
-        },
-        loop: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+        <div class="started-btn d-flex">
+          <button class="get-started-btn my-5">
+            <a
+              href="https://app.powerbi.com/groups/a2a28cf4-a7f5-4830-8fa4-370e8f09dae7/reports/b4c4bb49-e88f-4dfa-bf39-e6780f8458a8/ReportSectiond149c1c5e8b1c7ae6ef6?experience=power-bi">
+              Get Started
+            </a>
+          </button>
+        </div>
+      </div>
+    </div> -->
+  </div>
 
-    <script>
-      AOS.init({
-        duration: 1200,
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    var swiper = new Swiper(".metaSwiper", {
+      autoplay: {
+        delay: 3700,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+      effect: "creative",
+      creativeEffect: {
+        prev: {
+          shadow: true,
+          translate: ["-120%", 0, -500],
+        },
+        next: {
+          shadow: true,
+          translate: ["120%", 0, -500],
+        },
+      },
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <script>
+    AOS.init({
+      duration: 1200,
+    });
+  </script>
+  <script>
+    let panels = document.querySelectorAll(".panel");
+    panels.forEach((panel) => {
+      panel.addEventListener("click", () => {
+        removeActiveClasses();
+        panel.classList.add("active");
       });
-    </script>
-    <script>
-      let panels = document.querySelectorAll(".panel");
+    });
+
+    function removeActiveClasses() {
       panels.forEach((panel) => {
-        panel.addEventListener("click", () => {
-          removeActiveClasses();
-          panel.classList.add("active");
-        });
+        panel.classList.remove("active");
       });
+    }
+  </script>
+  <script>
+    const contForm = document.querySelectorAll(".contactSales");
+    const formDisplay = document.querySelector(".formContact");
+    const send = document.querySelectorAll(".send");
 
-      function removeActiveClasses() {
-        panels.forEach((panel) => {
-          panel.classList.remove("active");
+    function displayForm() {
+      if (contForm) {
+        contForm.forEach((button) => {
+          button.addEventListener("click", () => {
+            formDisplay?.classList.toggle("showForm");
+          });
         });
       }
-    </script>
-  </body>
+
+      if (send) {
+        send.forEach((button) => {
+          button.addEventListener("click", () => {
+            formDisplay?.classList.toggle("showForm");
+          });
+        });
+      }
+    }
+
+    displayForm();
+  </script>
+
+  <script>
+    document.getElementById('emailFormMeta').addEventListener('submit', async function (e) {
+      e.preventDefault(); // Prevent the default form submission
+
+      const formData = {
+        firstName: document.getElementById('firstName').value.trim(),
+        lastName: document.getElementById('lastName').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        requestType: document.getElementById('requestType').value.trim(),
+        comments: document.getElementById('comments').value.trim(),
+      };
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!formData.email) {
+        alert('Email field cannot be empty');
+        return;
+      }
+
+      if (!emailRegex.test(formData.email)) {
+        alert('Please enter a valid email address');
+        return;
+      }
+
+      console.log('Validated formData:', formData);
+      try {
+        const response = await fetch('https://m594bmgj-8080.inc1.devtunnels.ms/api/v1/send-feedback', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          alert('Form submitted successfully!');
+          console.log('data', data);
+        } else {
+          throw new Error('Failed to submit the form');
+        }
+      } catch (error) {
+        alert(error.message);
+        console.error(error);
+      }
+    });
+  </script>
+  <script>
+    document.getElementById('emailDemoMeta').addEventListener('submit', async function (e) {
+      e.preventDefault(); // Prevent the default form submission
+
+      const emailInput = document.getElementById('scheduleEmail').value.trim();
+      if (!emailInput) {
+        alert('Email field cannot be empty');
+        return;
+      }
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailInput)) {
+        alert('Please enter a valid email address');
+        return;
+      }
+      const formData = {
+        email: emailInput,
+      };
+      console.log(formData)
+      try {
+        const response = await fetch('https://m594bmgj-8080.inc1.devtunnels.ms/api/v1/demo-scheduler', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          alert('Form submitted successfully!');
+          console.log('data', data);
+        } else {
+          throw new Error('Failed to submit the form');
+        }
+      } catch (error) {
+        alert(error.message);
+        console.error(error);
+      }
+    });
+  </script>
+</body>
+
 </html>
