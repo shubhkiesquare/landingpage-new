@@ -12,20 +12,46 @@
     <link rel="icon" type="image/png" href="./images/kiesquare-fav-192x192.png" />
     <link rel="icon" type="image/png" href="./images/kiesquare-fav-512x512.png" />
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+                publicKey: "zefu7Cb7C1ftvVvBX",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        document.getElementById('emailForm')
+            .addEventListener('submit', function (event) {
+                event.preventDefault();
 
+                btn.value = 'Sending...';
+
+                const serviceID = 'default_service';
+                const templateID = 'template_ac2s0rl';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Send Email';
+                        alert('Sent!');
+                    }, (err) => {
+                        btn.value = 'Send Email';
+                        alert(JSON.stringify(err));
+                    });
+            });
+
+    </script>
 </head>
 
 <body>
     <div class="container-fluid g-0">
-        <header id="header" class="pageheader">
-            <div class=" logo">
+        <header>
+            <div class="logo">
                 <a href="./index.html">
                     <img src="./images/kiesquare-logo-transparent.png" alt="KiE Square" class="logo-img" />
                 </a>
@@ -33,7 +59,6 @@
             <div class="contact">
                 <button class="btn btn-outline-primary contactSales"><img src="./images/contact-sales.png"
                         class="sales-icon" alt="Contact Sales" />Contact Sales</button>
-
                 <form action="" class="contact-sales-form showForm row g-3 formContact" id="emailForm">
                     <div class="col-md-6">
                         <label for="firstName" class="form-label">First Name</label>
@@ -60,8 +85,7 @@
                         <label for="comments" class="form-label">Comments</label>
                         <textarea cols="6" rows="5" id="comments" class="form-control"></textarea>
                     </div>
-                    <button class="btn btn-primary send" type="submit" id="sendButton"
-                        onCLick="sendemail();">Send</button>
+                    <button class="btn btn-primary send" type="submit" id="send">Send</button>
                 </form>
             </div>
         </header>
@@ -83,16 +107,6 @@
                 </div>
             </div>
         </section>
-        <div class="row mb-5 justify-content-center">
-            <div class="col-sm-12 col-md-10">
-                <div class="video-player">
-
-                    <video controls autoplay muted width="100%" height="auto">
-                        <source type="video/mp4" src="./video/digi-cadence.mp4">
-                    </video>
-                </div>
-            </div>
-        </div>
         <div class="row mb-5 justify-content-center" data-aos="fade-up">
             <div class="col-sm-12 col-md-10">
                 <div class="swiper mySwiper">
@@ -137,20 +151,12 @@
 
         <div class="row mb-5 justify-content-center align-items-center" data-aos="zoom-in-up">
             <div class="col-sm-12 col-md-5 pe-5" data-aos="fade-right">
-                <!-- <div class="left-bg">
-                    <div class="left-content">
-                    </div>
-                </div> -->
                 <img src="./images/digi-cadence.png" alt="" class="ref-img" />
             </div>
             <div class="col-sm-12 col-md-5 ps-5" data-aos="fade-left">
-                <div class="right-bg">
-                    <div class="right-content">
-                        <span class="subheading">Unlock your brand's true potential in the digital world. Discover
-                            where you stand and where you can go with the
-                            <span class="brushline">Digi-Cadence Tool.</span></span>
-                    </div>
-                </div>
+                <span class="subheading">Unlock your brand's true potential in the digital world. Discover
+                    where you stand and where you can go with the
+                    <span class="brushline">Digi-Cadence Tool.</span></span>
             </div>
         </div>
 
@@ -289,20 +295,18 @@
             </div>
         </div>
         <div class="row justify-content-center align-items-center my-5 pb-5" data-aos="zoom-in">
-            <!-- <div class="col-5">
+            <div class="col-5">
                 <div class="dq-highlight">
                     <img src="./images/why-choose.png" alt="Why Choose us" class="banner-img" />
                 </div>
-            </div> -->
-            <div class="col-10">
-                <div class="highlight-content">
-                    <span class="choose-text">
-                        Our DC Tool is not just another digital audit; it's your brand's
-                        pathway to digital excellence. With actionable insights, precise
-                        benchmarking, and a focus on customer-centric strategies, you'll be
-                        equipped to lead in the digital age.
-                    </span>
-                </div>
+            </div>
+            <div class="col-5">
+                <span class="choose-text">
+                    Our DC Tool is not just another digital audit; it's your brand's
+                    pathway to digital excellence. With actionable insights, precise
+                    benchmarking, and a focus on customer-centric strategies, you'll be
+                    equipped to lead in the digital age.
+                </span>
             </div>
         </div>
         <div class="row justify-content-center">
@@ -320,23 +324,20 @@
                             </a>
                         </button> -->
                     <div class="col-6">
-                        <form id="emailDemo">
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" id="scheduleEmail"
-                                    placeholder="Enter your email" aria-label="Enter your email"
-                                    aria-describedby="sendEmailButton">
-                                <button class="btn btn-primary" type="submit" id="sendEmailButton">Schedule for
-                                    Demo</button>
-                            </div>
-                        </form>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Enter your email"
+                                aria-label="Enter your email" aria-describedby="button-addon2">
+                            <button class="btn btn-primary" type="button" id="button-addon2">Schedule for
+                                Demo</button>
+                        </div>
                     </div>
-                    <!-- <div class="col-4 align-self-start">
+                    <div class="col-4 align-self-start">
                         <button class="get-started-btn">
                             <a href="./pricing.html" target="_blank">
-                                Buy The DC tool Now
+                                buy the DC tool now
                             </a>
                         </button>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -497,7 +498,6 @@
             </div>
         </section>
     </div>
-    <script src="./js/script.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -572,95 +572,26 @@
         }
 
         displayForm();
+        // const btn = document.getElementById('send');
 
-    </script>
-    <script>
-        document.getElementById('emailForm').addEventListener('submit', async function (e) {
-            e.preventDefault(); // Prevent the default form submission
+        // document.getElementById('emailForm')
+        //     .addEventListener('submit', function (event) {
+        //         event.preventDefault();
 
-            const formData = {
-                firstName: document.getElementById('firstName').value.trim(),
-                lastName: document.getElementById('lastName').value.trim(),
-                email: document.getElementById('email').value.trim(),
-                requestType: document.getElementById('requestType').value.trim(),
-                comments: document.getElementById('comments').value.trim(),
-            };
+        //         btn.value = 'Sending...';
 
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        //         const serviceID = 'default_service';
+        //         const templateID = 'template_ac2s0rl';
 
-            if (!formData.email) {
-                alert('Email field cannot be empty');
-                return;
-            }
-
-            if (!emailRegex.test(formData.email)) {
-                alert('Please enter a valid email address');
-                return;
-            }
-
-            console.log('Validated formData:', formData);
-
-            try {
-                const response = await fetch('https://m594bmgj-8080.inc1.devtunnels.ms/api/v1/send-feedback', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(formData),
-                });
-
-                if (response.ok) {
-                    const data = await response.json();
-                    alert('Form submitted successfully!');
-                    console.log('data', data);
-                } else {
-                    throw new Error('Failed to submit the form');
-                }
-            } catch (error) {
-                alert(error.message);
-                console.error(error);
-            }
-        });
-    </script>
-    <script>
-        document.getElementById('emailDemo').addEventListener('submit', async function (e) {
-            e.preventDefault(); // Prevent the default form submission
-            const emailInput = document.getElementById('scheduleEmail').value.trim();
-            if (!emailInput) {
-                alert('Email field cannot be empty');
-                return;
-            }
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(emailInput)) {
-                alert('Please enter a valid email address');
-                return;
-            }
-            const formData = {
-                email: emailInput,
-            };
-
-            console.log(formData)
-            try {
-                const response = await fetch('https://m594bmgj-8080.inc1.devtunnels.ms/api/v1/demo-scheduler', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(formData),
-                });
-
-                if (response.ok) {
-                    const data = await response.json();
-                    alert('Form submitted successfully!');
-                    console.log('data', data);
-                } else {
-                    throw new Error('Failed to submit the form');
-                }
-            } catch (error) {
-                alert(error.message);
-                console.error(error);
-            }
-        });
+        //         emailjs.sendForm(serviceID, templateID, this)
+        //             .then(() => {
+        //                 btn.value = 'Send Email';
+        //                 alert('Sent!');
+        //             }, (err) => {
+        //                 btn.value = 'Send Email';
+        //                 alert(JSON.stringify(err));
+        //             });
+        //     });
     </script>
 
 </body>

@@ -98,11 +98,10 @@ header nav a {
     color: #555;
     font-weight: 500;
 }
-.container-fluid {
-    width: calc(100% - 60px);
-    max-width: 1320px;
+/* .container-fluid {
+    width: 100% !important;
     margin: 0 auto;
-}
+} */
 /* carousel */
 .carousel {
     position: relative;
@@ -819,7 +818,6 @@ header nav a {
     background-color: #b0190c;
     color: #fff;
     border-radius: 8px;
-    border: none;
 }
 
 .btn::after {
@@ -907,7 +905,7 @@ header nav a {
 .intro {
     display: block;
     width: 100%;
-    /* margin-top: 90px; */
+    margin-top: 90px;
 }
 
 .intro .product-detail {
@@ -983,7 +981,7 @@ header nav a {
 .get-started-btn:hover{
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    background-color: #98160a;
+    background-color: #88140a;
 }
 .started-btn {
     display: flex;
@@ -997,22 +995,16 @@ header nav a {
     justify-items: center;
     align-items: center;
     margin: 0;
-    background: #fef8f7;
-    border-radius: 80px 0;
-    width: 100%;
-    padding: 60px 0;
 }
 
 .product-view h3 {
     font-family: "Caveat", cursive;
     font-size: 4.5rem;
     font-weight: 300;
-    color: #A1170B;
-    /* color: #E26A0A; */
-    /* color: #373737; */
+    color: #373737;
     line-height: 1;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .product-view h3::before {
@@ -1369,11 +1361,6 @@ blockquote {
 .banner-img {
     width: 100%;
     height: 100%;
-    display: block;
-    border-radius: 20px;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    padding: .75rem;
-    background-color: #f8f6f1;
 }
 
 .swiper-button-next,
@@ -1381,8 +1368,6 @@ blockquote {
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
     color: #333;
-    font-size: 36px !important;
-    text-shadow: 2px 0px 1px #ffffff;
 }
 
 .container {
@@ -1579,13 +1564,12 @@ blockquote {
 .choose-text {
     font-family: 'poppins';
     font-size: 20px;
-    /* font-style: italic; */
-    color: #222120;
+    font-style: italic;
+    color: #343536;
     padding: 0 2rem 0 4rem;
     display: block;
     letter-spacing: 0.8px;
-    line-height: 1.5;
-    font-weight: 300;
+    line-height: 2;
 }
 .main-text {
     display: block;
@@ -1997,71 +1981,3 @@ h2.spends-heading {font-size: 6.5rem !important; display: flex; justify-content:
     border-radius: 8px;
     padding: 0.525rem .75rem;
 }
-.video-player {
-    display: block;
-    position: relative;
-    height: 0;
-    padding-bottom: 56.25%;
-}
-.pageheader {
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    transition: background-color 0.45s cubic-bezier(0.6, 0.6, 0, 1),
-      backdrop-filter 0.45s cubic-bezier(0.6, 0.6, 0, 1),
-      box-shadow 0.45s cubic-bezier(0.6, 0.6, 0, 1),
-      width 1s cubic-bezier(0.6, 0.6, 0, 1),
-      -webkit-backdrop-filter 0.45s cubic-bezier(0.6, 0.6, 0, 1);
-  }
-  .header-scrolled {
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    width: 100%;
-    border-radius: 0 0 20px 20px;
-    background-color: #fffffff2;
-    box-shadow:0 0.125rem 0.25rem rgba(0, 0, 0, .075);
-  }
- video {
-    border-radius: 20px;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .125);
- }
- .right-bg {
-    background: linear-gradient(-50deg, #082147 -1.58%, #0D479F 92%);
-    /* background: linear-gradient(126.1deg, #FF6565 -1.58%, #F34040 92%); */
-    /* background: linear-gradient(126.1deg, #B0190C -1.58%, #E0200F 92%); */
-    padding: 32px 48px;
-    border-radius: 40px;
-    display: flex;
-    transform: skewX(-12deg);
- }
- .right-content {
-    display: flex;
-    transform: skewX(12deg);
-    color: #fff;
- }
- .left-bg {
-    background: linear-gradient(126.1deg, #F8F6F1 -1.58%, #F6F6F1 92%);
-    padding: 32px 48px;
-    border-radius: 40px;
-    display: flex;
-    transform: skewX(-12deg);
- }
- .left-content {
-    display: flex;
-    transform: skewX(12deg);
-    color: #fff;
- }
- .highlight-content {
-    background: #f8f6f1;
-    display: block;
-    height: 100%;
-    padding: 60px;
-    border-radius: 20px;
-    box-shadow: 5px 8px rgba(0, 0, 0, .7);
- }
- .highlight-content .choose-text {
-    font-size: 30px;
-    font-weight: 400;
- }

@@ -2,19 +2,16 @@
     display: block;
     padding: 20px 12px 12px;
     border-radius: 20px;
-    color: #121314;
+    color: #fff;
 }
 .tool-dc {
-    background: #CED8FB;
-    border: 1px solid #5577F2;
+    background: #5577F2;
 }
 .tool-spend {
-    background: #FFB6CD;
-    border: 1px solid #FF0051;
+    background: #F90950;
 }
 .tool-metaq {
-    background: #FFEBB6;
-    border: 1px solid #ffbb00;
+    background: #ffbb00;
 }
 .tool-heading {
     font-size: 2.5vw !important;
@@ -24,7 +21,7 @@
     display: block;
     text-align: center;
     margin: 0 auto;
-    color: #121314;
+    color: #fff;
     letter-spacing: .7px;
   }
   .tool-description {
@@ -36,7 +33,7 @@
     text-align: justify;
     margin: .5rem auto;
     letter-spacing: .75px;
-    color: #121314;
+    color: #fff;
 }
 .hero-carousel {
     display: block;
@@ -60,7 +57,7 @@
     width: 100%;
     margin: 1rem auto;
   }
-  /* .pageheader {
+  .pageheader {
     position: sticky;
     top: 0;
     left: 0;
@@ -75,12 +72,12 @@
   .header-scrolled {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    width: calc(100vw - 60px);
+    width: 1080px;
     border-radius: 20px;
     background-color: #fffffff2;
     box-shadow: 0 0 2px #5f4a2e14, 0 2px 3px #5f4a2e0a, 0 4px 6px #5f4a2e0a,
       0 20px 32px -12px #5f4a2e1f;
-  } */
+  }
   
   .form-container{
     display: block;
@@ -266,8 +263,6 @@
     background-size: contain;
     width: 100%;
     height: auto;
-    border-radius: 24px;
-    box-shadow: 0 0rem 0.35rem rgba(0, 0, 0, .125);
 }
 
 .form-row-wrapper {
@@ -280,7 +275,7 @@
     width: 80%;
     line-height: 1;
     font-weight: 600;
-    color: #121314;
+    color: #fff;
 }
 .form-wrapper .form-control,
 .form-row-wrapper .form-control 
@@ -302,7 +297,4 @@ small {
 }
 .error {
     color: #b0190c;
-}
-.tools-details .form-control{
-    text-align: center;
 }
