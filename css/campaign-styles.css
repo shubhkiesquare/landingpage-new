@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'poppins', sans-serif;
+}
+
+.campaign-main-container{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.summary-line {
+    background: #f8f9fa;
+    padding: 10px;
+    font-weight: bold;
+    /* margin-top: 10px; */
+    border: 1px solid #ddd;
+}
+
+.summary-line2 {
+    background: #f8f9fa;
+    padding: 10px;
+    font-weight: bold;
+    /* margin-top: 10px; */
+    border: 1px solid #ddd;
+}
+
+.Campaign-Name-Generator {
+    background-color: #f9f9f9;
+}
+
+.Adset-Name-Generator-btn {
+    background-color: #f9f9f9;
+}
+
+.card-container {
+    background-color: #f6f7f8;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;  
+    word-wrap: break-word;
+    background-clip: border-box;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 24px;
+    border-radius: 12px;
+}
+
+label {
+    /* margin-bottom: 10px; */
+}
+
+.section-main-heading {
+    /* font-size: 38px; */
+    font-weight: 700;
+    /* color: #a33d3d; */
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section-main-heading::before,
+.section-main-heading::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 300px;
+    height: 2px;
+    background-color: #a33d3d;
+}
+
+.section-main-heading::before {
+    left: -320px;
+}
+
+.section-main-heading::after {
+    right: -320px;
+}
+
+.hover-line {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.hover-line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #a33d3d;
+    transition: width 0.3s ease-in-out;
+}
+
+.hover-line:hover::after {
+    width: 100%;
+}
+
+.sub-main-heading {
+   
+    border-bottom: 1px solid #0D479F;
+    color: #0D479F;
+}
+.sub-main-heading h5 {
+     
+    margin-bottom: 0;
+    padding: 8px 12px;
+}
+@media screen and (max-width:767px) {
+    .campaign-main-container  {
+        margin-top: 20px
+    }
+    .campaign-main-container .spends-heading{
+        margin-bottom: 20px;
+        display:block;
+    }
+}

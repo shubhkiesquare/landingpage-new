@@ -3,6 +3,7 @@
     padding: 20px 12px 12px;
     border-radius: 20px;
     color: #fff;
+    margin-bottom: 1rem;
 }
 .tool-dc {
     background: #5577F2;
@@ -298,3 +299,4 @@ small {
 .error {
     color: #b0190c;
 }
+
