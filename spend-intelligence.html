@@ -23,68 +23,92 @@
 </head>
 
 <body>
+  <div class="sticky-buttons">
+    <a href="./brand-intelligence.html" class="sticky-btn-links">Brand Intelligence</a>
+    <a href="./spend-intelligence.html" class="sticky-btn-links active">Spend Intelligence</a>
+    <a href="./market-intelligence.html" class="sticky-btn-links">Market Intelligence</a>
+  </div>
   <div class="container-fluid" id="scheduleContainer">
-    <header>
-      <div class="logo">
-        <a href="./index.html">
-          <img src="./images/kieVerse-logo.png" alt="KiEverse" class="logo-img" />
-        </a>
+    <div class="row sticky-top">
+      <div class="col-12 g-0">
+        <header id="header" class="pageheader">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid g-2">
+              <div class="logo">
+                <a href="index.html" class="Kieverse"><img src="./images/kieVerse-logo.png" alt="KiE Verse"
+                    class="logo-img"></a>
+              </div>
+              <button class="navbar-toggler burger collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav gap-3">
+
+                  <a class="goBactBtn" href="https://kiesquare.com"> Visit KiE Square</a>
+                  <button class="btn btn-outline-primary contactSales"><img src="./images/contact-sales.png"
+                      class="sales-icon" alt="Contact Sales" />Contact Sales</button>
+                  <div class="contact">
+                    <form action="" class="contact-sales-form row g-3 formContact" id="emailFormSpend">
+                      <div class="row g-0">
+                        <div class="col-sm-12 col-md-6 pe-lg-2 mb-3">
+                          <label for="firstName" class="form-label">First Name</label>
+                          <input type="text" class="form-control" id="firstName">
+                        </div>
+                        <div class="col-sm-12 col-md-6 ps-lg-2 mb-3">
+                          <label for="lastName" class="form-label">Last Name</label>
+                          <input type="text" class="form-control" id="lastName">
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <label for="requestType" class="form-label">Request Type</label>
+                          <select id="requestType" class="form-select">
+                            <option selected>Select</option>
+                            <option>Request for Demo</option>
+                            <option>Buying Options</option>
+                            <option>Enquire about tool</option>
+                          </select>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <label for="comments" class="form-label">Comments</label>
+                          <textarea cols="6" rows="5" id="comments" class="form-control"></textarea>
+                        </div>
+                      </div>
+                      <button class="btn btn-primary send" type="submit">Send</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
       </div>
-      <div class="contact">
-        <a class="goBactBtn" href="https://kiesquare.com"> Visit KiE Square</a>
-        <button class="btn btn-outline-primary contactSales"><img src="./images/contact-sales.png" class="sales-icon"
-            alt="Contact Sales" />Contact Sales</button>
-        <!-- <div class="overlay-container"> -->
-        <form action="" class="contact-sales-form row g-3 formContact" id="emailFormSpend">
-          <div class="row g-0">
-            <div class="col-sm-12 col-md-6 pe-lg-2 mb-3">
-              <label for="firstName" class="form-label">First Name</label>
-              <input type="text" class="form-control" id="firstName">
-            </div>
-            <div class="col-sm-12 col-md-6 ps-lg-2 mb-3">
-              <label for="lastName" class="form-label">Last Name</label>
-              <input type="text" class="form-control" id="lastName">
-            </div>
-            <div class="col-md-12 mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" id="email" class="form-control" required>
-            </div>
-            <div class="col-md-12 mb-3">
-              <label for="requestType" class="form-label">Request Type</label>
-              <select id="requestType" class="form-select">
-                <option selected>Select</option>
-                <option>Request for Demo</option>
-                <option>Buying Options</option>
-                <option>Enquire about tool</option>
-              </select>
-            </div>
-            <div class="col-md-12 mb-3">
-              <label for="comments" class="form-label">Comments</label>
-              <textarea cols="6" rows="5" id="comments" class="form-control"></textarea>
-            </div>
-          </div>
-          <button class="btn btn-primary send" type="submit">Send</button>
-        </form>
-        <!-- </div> -->
-      </div>
-    </header>
+    </div>
 
     <section class="intro section" id="introSection" data-bg="#fafafa">
-      <div class="nav-button-container">
-        <a href="./brand-intelligence.html" class="link-btn">Brand Intelligence</a>
-        <a href="./market-intelligence.html" class="link-btn">Market Intelligence</a>
-      </div>
+
       <div class="product-detail" data-aos="fade-up">
-        <div class="row justify-content-center">
-          <div class="col-sm-12 col-md-10 text-center">
-            <div class="title">Spend Intelligence</div>
-            <div class="my-5">
-              <h1 class="heading-1" id="pageTitle">
-                In the race for digital dominance, standing still is not an
-                option. <span class="brushline2">Elevate</span> your brand
-                with our Tools and pave the way for lasting
-                <span class="brushline3">success.</span>
-              </h1>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-10 text-center">
+              <div class="title">Maxx-RoI</div>
+              <div class="my-5">
+                <h1 class="heading-1">
+                  <span class="quotes">Extract</span> Non-Linear ROAS from every penny spent
+                </h1>
+                <!-- <h1 class="heading-1" id="pageTitle">
+                  In the race for digital dominance, standing still is not an
+                  option. <span class="brushline2">Elevate</span> your brand
+                  with our Tools and pave the way for lasting
+                  <span class="brushline3">success.</span>
+                </h1> -->
+              </div>
             </div>
           </div>
         </div>
@@ -258,7 +282,7 @@
 
                     <div class="text-center mt-4 Campaign-Name-Generator">
                       <button class="mb-3 border-0 btn btn-primary" id="campaignSummary">
-                        Generate Campaign Summary
+                        Generate Campaign Name
                       </button>
                       <div class="summary-line">Selected Campaign Details: None</div>
                     </div>
@@ -509,16 +533,16 @@
           <section id="sovTool">
             <div class="row justify-content-center g-0">
               <div class="col-12">
-                <div data-aos="fade-up" class="my-3 py-3 text-center">
+                <div data-aos="fade-up" class="mt-3 pt-3 text-center">
                   <h2 class="spends-heading">
                     <span style="color: #0d47a0">SOV</span> Tool
                   </h2>
                 </div>
-                <div class="started-btn d-flex">
+                <div class="demoContainer">
                   <form class="emailDemo my-4">
                     <div class="input-group mb-3">
                       <input type="email" class="scheduleEmail form-control" placeholder="Enter email" required />
-                      <button class="btn btn-primary" type="submit">Schedule for Demo</button>
+                      <button class="btn btn-primary spend-btn" type="submit">Schedule for Demo</button>
                     </div>
                   </form>
                 </div>
@@ -610,84 +634,88 @@
         </div>
 
         <div class="tab-pane fade" id="MultiChanel" role="tabpanel" aria-labelledby="contact-tab">
-          <section class="section" data-bg="#CCE0DB">
-            <div class="row justify-content-center mt-5 py-5">
-              <div class="col-sm-12 col-md-10">
-                <div class="product-view" data-aos="fade-up">
-                  <h2 class="spends-heading">
+          <section class="section" data-bg="#ebf3f1">
+            <div class="container-fluid">
 
-                    <span class="brushline3 multi-brushline3 px-4">Multi </span>
-                    Channel Attribution / MMM
-                  </h2>
-                  <div class="started-btn d-flex">
-                    <form class="emailDemo my-4">
-                      <div class="input-group mb-3">
-                        <input type="email" class="scheduleEmail form-control" placeholder="Enter email" required />
-                        <button class="btn btn-primary" type="submit">Schedule for Demo</button>
+              <div class="row justify-content-center mt-5 py-5">
+                <div class="col-12">
+                  <div class="product-view" data-aos="fade-up">
+                    <h2 class="spends-heading">
+
+                      <span class="brushline3 multi-brushline3 px-4">Multi </span>
+                      Channel Attribution / MMM
+                    </h2>
+                    <div class="demoContainer">
+                      <form class="emailDemo my-4">
+                        <div class="input-group mb-3">
+                          <input type="email" class="scheduleEmail form-control" placeholder="Enter email" required />
+                          <button class="btn btn-primary spend-btn" type="submit">Schedule for Demo</button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="row justify-content-center align-items-center">
+                      <div class="col-sm-12 col-md-5">
+                        <img src="./images/MMM-Spends-Pattern.png" alt="" class="myImages spend-slider-img mx-md-4"
+                          id="myImg10" />
                       </div>
-                    </form>
-                  </div>
-                  <div class="row mmm-bg align-items-center">
-                    <div class="col-sm-12 col-md-6">
-                      <img src="./images/MMM-Dashboard-4.png" alt="" class="myImages spend-slider-img mx-md-4"
-                        id="myImg10" />
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                      <span class="swiper-text">
-                        01. The marketing mix modeling dashboards are designed to
-                        provide a comprehensive analysis of brand performance across
-                        various platforms. These dashboards present detailed
-                        information on brand spend and volume across different
-                        channels, enabling marketers to understand how their
-                        investments correlate with outcomes. By visualizing the
-                        data, users can easily track the impact of their marketing
-                        activities and identify which platforms yield the highest
-                        returns. This holistic view of spend allocation helps in
-                        optimizing the marketing budget and making informed
-                        decisions that drive better business outcomes.
-                      </span>
-                    </div>
-                  </div>
-                  <div class="row mmm-bg align-items-center">
-                    <div class="col-sm-12 col-md-6">
-                      <span class="swiper-text">
-                        02. In addition to spend and volume insights, the dashboards
-                        include ROI charts that highlight the return on investment
-                        for each marketing channel. These charts help users assess
-                        the efficiency of their marketing strategies by showing
-                        which channels deliver the most significant returns relative
-                        to the investment made. Elasticity information is also
-                        featured, providing insights into how changes in marketing
-                        spend affect sales volume. Understanding these dynamics
-                        allows brands to fine-tune their strategies and respond more
-                        effectively to market conditions.
-                      </span>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                      <div class="d-block me-md-4">
-                        <img src="./images/MMM-Dashboard-5.png" alt="" class="myImages spend-slider-img" id="myImg11" />
+                      <div class="col-sm-12 col-md-5">
+                        <span class="swiper-text ps-5 pe-0">
+                          01. The marketing mix modeling dashboards are designed to
+                          provide a comprehensive analysis of brand performance across
+                          various platforms. These dashboards present detailed
+                          information on brand spend and volume across different
+                          channels, enabling marketers to understand how their
+                          investments correlate with outcomes. By visualizing the
+                          data, users can easily track the impact of their marketing
+                          activities and identify which platforms yield the highest
+                          returns. This holistic view of spend allocation helps in
+                          optimizing the marketing budget and making informed
+                          decisions that drive better business outcomes.
+                        </span>
                       </div>
                     </div>
-                  </div>
-                  <div class="row mmm-bg align-items-center">
-                    <div class="col-sm-12 col-md-6">
-                      <img src="./images/MMM-Dashboard-2.png" alt="" class="myImages spend-slider-img mx-md-4"
-                        id="myImg12" />
+                    <div class="row justify-content-center align-items-center mt-3 py-5 mb-5"
+                      style="background-color: #fafcfb;">
+                      <div class="col-sm-12 col-md-5">
+                        <span class="swiper-text pe-5 ps-0">
+                          02. In addition to spend and volume insights, the dashboards
+                          include ROI charts that highlight the return on investment
+                          for each marketing channel. These charts help users assess
+                          the efficiency of their marketing strategies by showing
+                          which channels deliver the most significant returns relative
+                          to the investment made. Elasticity information is also
+                          featured, providing insights into how changes in marketing
+                          spend affect sales volume. Understanding these dynamics
+                          allows brands to fine-tune their strategies and respond more
+                          effectively to market conditions.
+                        </span>
+                      </div>
+                      <div class="col-sm-12 col-md-5">
+                        <div class="d-block me-md-4">
+                          <img src="./images/MMMOutput.png" alt="" class="myImages spend-slider-img" id="myImg11" />
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-sm-12 col-md-6">
-                      <span class="swiper-text">
-                        03. The dashboards also incorporate data on discounts and
-                        volume, offering a clear view of how promotional activities
-                        influence sales. By analyzing this data, marketers can
-                        determine the optimal discount levels that maximize volume
-                        without eroding profitability. Overall, these dashboards
-                        serve as powerful tools for brands to assess and refine
-                        their marketing mix, ensuring that their strategies are both
-                        effective and efficient in driving growth.
-                      </span>
+                    <div class="row justify-content-center align-items-center">
+                      <div class="col-sm-12 col-md-5">
+                        <img src="./images/MMM-BrandVolume-Trends-02.png" alt=""
+                          class="myImages spend-slider-img mx-md-4" id="myImg12" />
+                      </div>
+                      <div class="col-sm-12 col-md-5">
+                        <span class="swiper-text ps-5 pe-0">
+                          03. The dashboards also incorporate data on discounts and
+                          volume, offering a clear view of how promotional activities
+                          influence sales. By analyzing this data, marketers can
+                          determine the optimal discount levels that maximize volume
+                          without eroding profitability. Overall, these dashboards
+                          serve as powerful tools for brands to assess and refine
+                          their marketing mix, ensuring that their strategies are both
+                          effective and efficient in driving growth.
+                        </span>
+                      </div>
                     </div>
-                  </div>
 
+                  </div>
                 </div>
               </div>
             </div>
@@ -703,217 +731,220 @@
                     <span style="color: #0d47a0">Simulator</span> - Spend & Sales Forecast Tool
                   </h2>
 
-                  <h1 class="heading-1">
+                  <h1 class="spends-heading">
                     In a world where
                     <span class="brushline2">financial</span> precision drives
                     success, let the Simulator guide your path. Optimize your spend
                     and sales forecasts with
-                    <span class="brushline3 confi-brushline3">confidence</span> and
+                    <span class="brushline2">confidence</span> and
                     precision.
                   </h1>
                 </div>
               </div>
             </div>
-            <div class="started-btn d-flex mt-5">
-              <form class="emailDemo my-4">
-                <div class="input-group mb-3">
+            <div class="demoContainer mt-5">
+              <form class="emailDemo">
+                <div class="input-group">
                   <input type="email" class="scheduleEmail form-control" placeholder="Enter email" required />
-                  <button class="btn btn-primary" type="submit">Schedule for Demo</button>
+                  <button class="btn btn-primary spend-btn" type="submit">Schedule for Demo</button>
                 </div>
               </form>
             </div>
             <div class="bg-color-white">
-              <div class="row justify-content-center">
-                <div class="col-sm-12 col-md-10">
-                  <div data-aos="fade-up" class="mt-5">
-                    <span class="sim-heading">Product Overview </span>
-                    <span class="simulator-text">
-                      Achieving financial excellence requires more than just
-                      guesswork; it demands strategic foresight and accurate data.
-                      Introducing the Simulator, a powerful forecasting tool built
-                      on the robust PowerBI platform. Designed to deliver accurate
-                      spend and sales forecasts, the Simulator uses a predefined
-                      model to analyze conditions such as event and non-event
-                      months. By leveraging historical data, the Simulator provides
-                      insightful projections, helping you make well-informed budget
-                      decisions and optimize your spending across various platforms.
-                    </span>
-                  </div>
-                  <h1 class="heading-1 my-5">
-                    Unlock the full potential of your budget. Use the
-                    <span class="brushline3 simu-brushline3">Simulator</span> to
-                    achieve precise forecasts and
-                    <span class="brushline2">strategic</span> financial planning.
-                  </h1>
-                  <div class="row justify-content-center">
-                    <div class="col-10">
-                      <div class="panel-container px-0">
-                        <div class="metaPanel active">
-                          <div class="featureCards">
-                            <div class="sidebar">
-                              <span class="slidenum">01</span>
-                              <span class="vertical-text">360 Marketing ROI</span>
-                            </div>
-                            <div class="panel-expand">
-                              <h3> 360 Marketing ROI:</h3>
-                              <div class="image-container sim-img-container">
-                                <img src="./images/SO-2.png" id="myImg14" class="myImages feature-icons"
-                                  alt="Website Performance Dashboard 1" />
-                              </div>
-                              <span class="feature-text sov-feature-text mt-4 mb-3">
-                                <strong>Historical Data Utilization:</strong>
-                                Leverage
-                                past performance to drive accurate forecasts and
-                                budget
-                                decisions.
-                                <strong class="d-block mt-3">ROI Optimization:
-                                </strong> Calculate potential
-                                returns to ensure your spending is strategically
-                                aligned
-                                with your financial goals.
+              <div class="container-fluid">
 
-                              </span>
-
-                            </div>
-                          </div>
-                        </div>
-                        <div class="metaPanel">
-                          <div class="featureCards">
-                            <div class="sidebar">
-                              <span class="slidenum">02</span>
-                              <span class="vertical-text"> Advanced
-                                Forecasting</span>
-                            </div>
-                            <div class="panel-expand">
-                              <h3>Advanced Forecasting:</h3>
-                              <div class="image-container sim-img-container">
-                                <img src="./images/SO-1.png" id="myImg13" class="myImages feature-icons"
-                                  alt="Social Dashboard 2" />
-                              </div>
-                              <span class="feature-text sov-feature-text mt-4 mb-3">
-                                <strong class="mt-3 d-block"> Predefined
-                                  Forecast Model:</strong> Benefit
-                                from a sophisticated model that calculates ROI,
-                                Minimum
-                                & Maximum values, and L3M (Last 3 Months) trends
-                                using
-                                historical data.
-                                <strong> Event & Non-Event Analysis:</strong>
-                                Distinguish and forecast spend and sales based
-                                on
-                                event-driven versus non-event months to tailor
-                                your
-                                financial strategy.
-
-                              </span>
-
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="metaPanel">
-                          <div class="featureCards">
-                            <div class="sidebar">
-                              <span class="slidenum">03</span>
-                              <span class="vertical-text">Strategic Budget
-                                Planning</span>
-                            </div>
-                            <div class="panel-expand">
-                              <h3>Strategic Budget Planning:</h3>
-                              <div class="image-container sim-img-container">
-                                <img src="./images/SO-3.png" id="myImg15" class="myImages feature-icons"
-                                  alt="Website Performance Dashboard 2" />
-                                <img src="./images/SO-4.png" id="myImg15" class="myImages feature-icons"
-                                  alt="Website Performance Dashboard 2" />
-                              </div>
-                              <span class="feature-text sov-feature-text mt-4 mb-3 pb-5">
-                                <strong class="d-block mt-3">Platform-Specific
-                                  Budgeting:</strong> Receive
-                                targeted recommendations on optimal budget
-                                allocations
-                                for each platform based on forecasted data.
-                                <strong>Optimized Budget Recommendations:
-                                </strong> Make
-                                data-driven decisions on budget allocation to
-                                maximize
-                                financial outcomes and effectiveness.
-                                <strong class="d-block mt-3">Scenario
-                                  Analysis:</strong> Explore various
-                                forecasting scenarios to understand potential
-                                impacts
-                                and refine your strategy.
-                              </span>
-
-                            </div>
-                          </div>
-                        </div>
-                        <div class="metaPanel">
-                          <div class="featureCards">
-                            <div class="sidebar">
-                              <span class="slidenum">04</span>
-                              <span class="vertical-text">Intuitive Interface
-                              </span>
-                            </div>
-                            <div class="panel-expand">
-                              <h3>Intuitive Interface:</h3>
-                              <div class="image-container sim-img-container">
-                                <img src="./images/SO-5.png" id="myImg15" class="myImages feature-icons"
-                                  alt="Website Performance Dashboard 2" />
-                                <img src="./images/SO-6.png" id="myImg15" class="myImages feature-icons"
-                                  alt="Website Performance Dashboard 2" />
-                              </div>
-                              <span class="feature-text sov-feature-text mt-4 mb-3">
-                                <strong>PowerBI Integration: </strong> Enjoy a
-                                user-friendly experience with advanced data
-                                visualization and reporting capabilities.
-                              </span>
-                              <span class="feature-text sov-feature-text mt-4 mb-3">
-                                <strong>Actionable Insights: </strong> Generate
-                                clear,
-                                actionable reports that facilitate strategic
-                                planning
-                                and informed decision-making.
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row justify-content-center">
-                    <div class="col-sm-12 col-md-5 mt-5 pt-5">
-                      <h2>
-                        Why Choose the
-                        <span class="text-color"><span class="sim-fireworks">Simulator?</span></span>
-                      </h2>
-                    </div>
-                  </div>
-                  <div class="row justify-content-center align-items-center my-5 pb-5" data-aos="zoom-in">
-                    <div class="col-sm-12 col-md-5">
-                      <div class="dq-highlight">
-                        <img src="./images/why-choose.png" alt="Why Choose us" class="banner-img" />
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-5">
-                      <span class="choose-text">
-                        The Simulator is more than a forecasting tool; it's your
-                        partner in strategic financial planning. By integrating
-                        historical data with advanced forecasting techniques, it
-                        provides you with accurate, actionable insights to optimize
-                        your budget and enhance ROI across platforms.
+                <div class="row justify-content-center">
+                  <div class="col-sm-12 col-md-10">
+                    <div data-aos="fade-up" class="mt-5">
+                      <span class="sim-heading">Product Overview </span>
+                      <span class="simulator-text">
+                        Achieving financial excellence requires more than just
+                        guesswork; it demands strategic foresight and accurate data.
+                        Introducing the Simulator, a powerful forecasting tool built
+                        on the robust PowerBI platform. Designed to deliver accurate
+                        spend and sales forecasts, the Simulator uses a predefined
+                        model to analyze conditions such as event and non-event
+                        months. By leveraging historical data, the Simulator provides
+                        insightful projections, helping you make well-informed budget
+                        decisions and optimize your spending across various platforms.
                       </span>
                     </div>
-                  </div>
-                  <div class="row justify-content-center">
-                    <div class="col-sm-12 col-md-8">
-                      <h2 class="text-center sim-position mb-5">
-                        Forecast effectively, plan
-                        <span style="color: #fbb131">strategically—leverage</span>
-                        the Simulator to navigate your financial journey with
-                        <span class="sim-fireworks">precision.</span>
-                      </h2>
+                    <h1 class="heading-1 my-5">
+                      Unlock the full potential of your budget. Use the
+                      <span class="brushline3 simu-brushline3">Simulator</span> to
+                      achieve precise forecasts and
+                      <span class="brushline2">strategic</span> financial planning.
+                    </h1>
+                    <div class="row justify-content-center">
+                      <div class="col-10">
+                        <div class="panel-container px-0">
+                          <div class="metaPanel active">
+                            <div class="featureCards">
+                              <div class="sidebar">
+                                <span class="slidenum">01</span>
+                                <span class="vertical-text">360 Marketing ROI</span>
+                              </div>
+                              <div class="panel-expand">
+                                <h3> 360 Marketing ROI:</h3>
+                                <div class="image-container sim-img-container">
+                                  <img src="./images/360-Marketing-ROI.png" id="myImg14" class="myImages feature-icons"
+                                    alt="Website Performance Dashboard 1" />
+                                </div>
+                                <span class="feature-text sov-feature-text mt-4 mb-3">
+                                  <strong>Historical Data Utilization:</strong>
+                                  Leverage
+                                  past performance to drive accurate forecasts and
+                                  budget
+                                  decisions.
+                                  <strong class="d-block mt-3">ROI Optimization:
+                                  </strong> Calculate potential
+                                  returns to ensure your spending is strategically
+                                  aligned
+                                  with your financial goals.
+
+                                </span>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="metaPanel">
+                            <div class="featureCards">
+                              <div class="sidebar">
+                                <span class="slidenum">02</span>
+                                <span class="vertical-text"> Advanced
+                                  Forecasting</span>
+                              </div>
+                              <div class="panel-expand">
+                                <h3>Advanced Forecasting:</h3>
+                                <div class="image-container sim-img-container">
+                                  <img src="./images/Advanced-Forecasting.png" id="myImg13"
+                                    class="myImages feature-icons" alt="Social Dashboard 2" />
+                                </div>
+                                <span class="feature-text sov-feature-text mt-4 mb-3">
+                                  <strong class="mt-3 d-block"> Predefined
+                                    Forecast Model:</strong> Benefit
+                                  from a sophisticated model that calculates ROI,
+                                  Minimum
+                                  & Maximum values, and L3M (Last 3 Months) trends
+                                  using
+                                  historical data.
+                                  <strong> Event & Non-Event Analysis:</strong>
+                                  Distinguish and forecast spend and sales based
+                                  on
+                                  event-driven versus non-event months to tailor
+                                  your
+                                  financial strategy.
+
+                                </span>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="metaPanel">
+                            <div class="featureCards">
+                              <div class="sidebar">
+                                <span class="slidenum">03</span>
+                                <span class="vertical-text">Strategic Budget
+                                  Planning</span>
+                              </div>
+                              <div class="panel-expand">
+                                <h3>Strategic Budget Planning:</h3>
+                                <div class="image-container sim-img-container">
+                                  <img src="./images/stratagic-budget-planning-1.png" id="myImg15"
+                                    class="myImages feature-icons" alt="Website Performance Dashboard 2" />
+                                  <img src="./images/stratagic-budget-planning-2.png" id="myImg15"
+                                    class="myImages feature-icons" alt="Website Performance Dashboard 2" />
+                                </div>
+                                <span class="feature-text sov-feature-text mt-4 mb-3 pb-5">
+                                  <strong class="d-block mt-3">Platform-Specific
+                                    Budgeting:</strong> Receive
+                                  targeted recommendations on optimal budget
+                                  allocations
+                                  for each platform based on forecasted data.
+                                  <strong>Optimized Budget Recommendations:
+                                  </strong> Make
+                                  data-driven decisions on budget allocation to
+                                  maximize
+                                  financial outcomes and effectiveness.
+                                  <strong class="d-block mt-3">Scenario
+                                    Analysis:</strong> Explore various
+                                  forecasting scenarios to understand potential
+                                  impacts
+                                  and refine your strategy.
+                                </span>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="metaPanel">
+                            <div class="featureCards">
+                              <div class="sidebar">
+                                <span class="slidenum">04</span>
+                                <span class="vertical-text">Intuitive Interface
+                                </span>
+                              </div>
+                              <div class="panel-expand">
+                                <h3>Intuitive Interface:</h3>
+                                <div class="image-container sim-img-container">
+                                  <img src="./images/Intuitive-Interface-off-platform.png" id="myImg15"
+                                    class="myImages feature-icons" alt="Website Performance Dashboard 2" />
+                                  <img src="./images/intuitive-Interface-On-platform.png" id="myImg15"
+                                    class="myImages feature-icons" alt="Website Performance Dashboard 2" />
+                                </div>
+                                <span class="feature-text sov-feature-text mt-4 mb-3">
+                                  <strong>PowerBI Integration: </strong> Enjoy a
+                                  user-friendly experience with advanced data
+                                  visualization and reporting capabilities.
+                                </span>
+                                <span class="feature-text sov-feature-text mt-4 mb-3">
+                                  <strong>Actionable Insights: </strong> Generate
+                                  clear,
+                                  actionable reports that facilitate strategic
+                                  planning
+                                  and informed decision-making.
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-sm-12 col-md-10 mt-5 pt-5">
+                        <h2>
+                          Why Choose the
+                          <span class="text-color sim-fireworks">Simulator? </span>
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="row justify-content-center align-items-center my-5 pb-5" data-aos="zoom-in">
+                      <div class="col-sm-12 col-md-5">
+                        <div class="dq-highlight">
+                          <img src="./images/why-choose.png" alt="Why Choose us" class="banner-img" />
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-5">
+                        <span class="choose-text">
+                          The Simulator is more than a forecasting tool; it's your
+                          partner in strategic financial planning. By integrating
+                          historical data with advanced forecasting techniques, it
+                          provides you with accurate, actionable insights to optimize
+                          your budget and enhance ROI across platforms.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-sm-12 col-md-8">
+                        <h2 class="text-center sim-position mb-5">
+                          Forecast effectively, plan
+                          <span style="color: #fbb131">strategically—leverage</span>
+                          the Simulator to navigate your financial journey with
+                          <span class="sim-fireworks">precision.</span>
+                        </h2>
 
 
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1156,6 +1187,7 @@
         email: document.getElementById('email').value.trim(),
         requestType: document.getElementById('requestType').value.trim(),
         comments: document.getElementById('comments').value.trim(),
+        source: "For Spend Intelligence"
       };
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -1208,6 +1240,7 @@
       }
       const formData = {
         email: emailInput,
+        source: "For Spend intelligence"
       };
       console.log(formData)
       try {
@@ -1251,7 +1284,7 @@
         return;
       }
 
-      const formData = { email: emailInput };
+      const formData = { email: emailInput, source: "For Spend Intelligence" };
       console.log(formData);
 
       try {

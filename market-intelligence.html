@@ -21,78 +21,102 @@
 </head>
 
 <body>
+  <div class="sticky-buttons">
+    <a href="./brand-intelligence.html" class="sticky-btn-links">Brand Intelligence</a>
+    <a href="./spend-intelligence.html" class="sticky-btn-links">Spend Intelligence</a>
+    <a href="./market-intelligence.html" class="sticky-btn-links active">Market Intelligence</a>
+  </div>
   <div class="container-fluid">
-    <header>
-      <div class="logo">
-        <a href="./index.html">
-          <img src="./images/kieVerse-logo.png" alt="KiEverse" class="logo-img" />
-        </a>
+    <div class="row sticky-top">
+      <div class="col-12 g-0">
+        <header id="header" class="pageheader">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid g-2">
+              <div class="logo">
+                <a href="index.html" class="Kieverse"><img src="./images/kieVerse-logo.png" alt="KiE Verse"
+                    class="logo-img"></a>
+              </div>
+              <button class="navbar-toggler burger collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav gap-3">
+
+                  <a class="goBactBtn" href="https://kiesquare.com"> Visit KiE Square</a>
+                  <button class="btn btn-outline-primary contactSales"><img src="./images/contact-sales.png"
+                      class="sales-icon" alt="Contact Sales" />Contact Sales</button>
+                  <div class="contact">
+                    <form action="" class="contact-sales-form row g-3 formContact" id="emailFormMeta">
+                      <div class="row g-0">
+                        <div class="col-sm-12 col-md-6 pe-lg-2 mb-3">
+                          <label for="firstName" class="form-label">First Name</label>
+                          <input type="text" class="form-control" id="firstName">
+                        </div>
+                        <div class="col-sm-12 col-md-6 ps-lg-2 mb-3">
+                          <label for="lastName" class="form-label">Last Name</label>
+                          <input type="text" class="form-control" id="lastName">
+                        </div>
+                        <div class="col-sm-12 col-md-12 mb-3">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="col-sm-12 col-md-12 mb-3">
+                          <label for="requestType" class="form-label">Request Type</label>
+                          <select id="requestType" class="form-select">
+                            <option selected>Select</option>
+                            <option>Request for Demo</option>
+                            <option>Buying Options</option>
+                            <option>Enquire about tool</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-12 col-md-12 mb-3">
+                          <label for="comments" class="form-label">Comments</label>
+                          <textarea cols="6" rows="5" id="comments" class="form-control"></textarea>
+                        </div>
+                      </div>
+                      <button class="btn btn-primary send" type="submit">Send</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+        </header>
       </div>
-      <div class="contact">
-        <a class="goBactBtn" href="https://kiesquare.com"> Visit KiE Square</a>
-        <button class="btn btn-outline-primary contactSales"><img src="./images/contact-sales.png" class="sales-icon"
-            alt="Contact Sales" />Contact Sales</button>
-        <!-- <div class="overlay-container"> -->
-        <form action="" class="contact-sales-form row g-3 formContact" id="emailFormMeta">
-          <div class="row g-0">
-            <div class="col-sm-12 col-md-6 pe-lg-2 mb-3">
-              <label for="firstName" class="form-label">First Name</label>
-              <input type="text" class="form-control" id="firstName">
-            </div>
-            <div class="col-sm-12 col-md-6 ps-lg-2 mb-3">
-              <label for="lastName" class="form-label">Last Name</label>
-              <input type="text" class="form-control" id="lastName">
-            </div>
-            <div class="col-sm-12 col-md-12 mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" id="email" class="form-control" required>
-            </div>
-            <div class="col-sm-12 col-md-12 mb-3">
-              <label for="requestType" class="form-label">Request Type</label>
-              <select id="requestType" class="form-select">
-                <option selected>Select</option>
-                <option>Request for Demo</option>
-                <option>Buying Options</option>
-                <option>Enquire about tool</option>
-              </select>
-            </div>
-            <div class="col-sm-12 col-md-12 mb-3">
-              <label for="comments" class="form-label">Comments</label>
-              <textarea cols="6" rows="5" id="comments" class="form-control"></textarea>
-            </div>
-          </div>
-          <button class="btn btn-primary send" type="submit">Send</button>
-        </form>
-        <!-- </div> -->
-      </div>
-    </header>
+    </div>
 
     <section class="intro section">
-      <div class="nav-button-container">
-        <a href="./spend-intelligence.html" class="link-btn">Spend Intelligence</a>
-        <a href="./brand-intelligence.html" class="link-btn">Brand Intelligence</a>
-      </div>
+
       <div class="product-detail" data-aos="fade-up">
-        <div class="row justify-content-center">
-          <div class="col-10 text-center">
-            <div class="title">META-360</div>
-            <div class="my-5">
-              <h1 class="heading-1">
-                In the race for digital dominance, standing still is not an
-                option. <span class="brushline2">Elevate</span> your brand
-                with our Tools and pave the way for lasting
-                <span class="brushline3">success.</span>
-              </h1>
+        <div class="container-fluid">
+
+          <div class="row justify-content-center">
+            <div class="col-10 text-center">
+              <div class="title">META-360</div>
+              <div class="my-4">
+                <h1 class="heading-1"><span class="quotes">360</span> Intelligence for E-Com Supremacy.</h1>
+                <!-- <h1 class="heading-1">
+                  In the race for digital dominance, standing still is not an
+                  option. <span class="brushline2">Elevate</span> your brand
+                  with our Tools and pave the way for lasting
+                  <span class="brushline3">success.</span>
+                </h1> -->
+              </div>
             </div>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-sm-12 col-md-6 col-lg-12">
+          <div class="col-sm-12 col-md-12 col-lg-12">
             <form id="emailDemoMeta">
               <div class="input-group mt-4 mb-5">
                 <input type="text" class="form-control" id="scheduleEmail" placeholder="Enter your email"
                   aria-label="Enter your email" aria-describedby="sendEmailButton">
-                <button class="btn btn-primary" type="submit" id="sendEmailButton">Schedule for
+                <button class="btn btn-primary meta-btn" type="submit" id="sendEmailButton">Schedule for
                   Demo</button>
               </div>
             </form>
@@ -384,7 +408,7 @@
     <div class="row justify-content-center">
       <div class="col-md-8 mt-5 pt-5">
         <h2>
-          Why Choose <span class="text-color">Meta?</span>
+          Why Choose <span class="text-color sim-fireworks">Meta?</span>
 
         </h2>
       </div>
@@ -407,7 +431,8 @@
 
 
   </div>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
@@ -497,6 +522,7 @@
         email: document.getElementById('email').value.trim(),
         requestType: document.getElementById('requestType').value.trim(),
         comments: document.getElementById('comments').value.trim(),
+        source: "For Market Intelligence"
       };
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -549,6 +575,7 @@
       }
       const formData = {
         email: emailInput,
+        source: "For Market Intelligence"
       };
       console.log(formData)
       try {
